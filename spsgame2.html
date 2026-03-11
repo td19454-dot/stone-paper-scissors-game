@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>game</title>
+    <link rel="stylesheet" href="spsgame2.css"> 
+</head>
+<body>
+    <h1>Stone  Paper Scissors Game</h1>
+    <button  class = 'button' onclick="
+    computerChoice = generateComputerChoice();
+    let result = getresult('stone', computerChoice);
+    showresult('stone', computerChoice, result);    "
+> <img src = 'stone.jpg' alt = 'stone imaage' class = 'image'></button>
+<button  class = 'button'onclick="
+    computerChoice = generateComputerChoice();
+    let result1 = getresult('paper', computerChoice);
+     showresult('paper', computerChoice, result1);  "
+> <img src = 'paper.png' alt = 'paper imaage' class = 'image'></button>
+<button  class = 'button' onclick="
+    computerChoice = generateComputerChoice();
+    let result2 = getresult('scissors', computerChoice);
+    showresult('scissors', computerChoice, result2);
+    "
+><img src = 'scissors.jpg' alt = 'scissors imaage' class = 'image'></button><br>
+
+
+<button id = 'reset' onclick="resetScoreboard()">RESTART THE GAME </button><hr>
+<h3 id = 'usermove'> </h3>
+<h3 id = 'computermove'> </h3>
+<h3 id = 'result'> </h3>
+<h3 id = 'scoreboard'> </h3><hr>
+<footer>
+    <p>
+        THE RULE OF THE GAME : <br>
+                  1. 🪨  defeat   ✂ <br>
+                  2.  ✂    defeat   📄<br>
+                  3.📄    defeat   🪨<br>
+                  here u will choose stone,paper or scissors and the computer also choose one of the thing among the three option and basis on the rule mentioned above we will givve u the result
+    </p>
+</footer>
+    <script src = 'spsgame.js'>
+    </script>
+</body>
+</html>
